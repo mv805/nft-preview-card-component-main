@@ -42,19 +42,19 @@ footer {
 
 /* || Card image */
 
-#cube-image{
+.cube-image{
     border-radius: .5rem;
     height: 16.6rem;
     overflow:hidden;
     position: relative;
 }
 
-img#cube-avatar {  
+img.cube-avatar {  
     width: 100%;
     z-index: 1;
 }
 
-img#view-eye {  
+img.view-eye {  
     width: 15%;
     position: absolute;
     opacity: 0;
@@ -66,7 +66,7 @@ img#view-eye {
 }
 
 
-#etherium-overlay{
+.etherium-overlay{
     background: hsl(178, 100%, 50%);
     opacity: 0;
     overflow:hidden;
@@ -77,40 +77,40 @@ img#view-eye {
     transition: opacity .1s;
 }
 
-#cube-image:hover #etherium-overlay, #cube-image:hover #view-eye{
+.cube-image:hover .etherium-overlay, .cube-image:hover .view-eye{
     opacity: .7;
     cursor: pointer;
 }
 
 /* || Card text */
 
-#card-info {
+.card-info {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid hsl(215, 51%, 70%);
     padding-bottom: 1rem;
 }
 
-#card-info #ETH{
+.card-info .ETH{
     color: hsl(178, 100%, 50%);
     font-weight: 600;
 }
 
-#card-info #ETH::before{
+.card-info .ETH::before{
     content: url(images/icon-ethereum.svg);
     margin-right: .3rem;
 }
 
-#card-info #days-left{
+.card-info .days-left{
     font-weight: 400;
     
 }
-#card-info #days-left::before{
+.card-info .days-left::before{
     content: url(images/icon-clock.svg);
     margin-right: .3rem;
 }
 
-#ETH-title {
+.ETH-title {
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
@@ -118,22 +118,22 @@ img#view-eye {
     padding-top: .25rem;
 }
 
-#card-creation-footnote #creator-name{ 
+.card-creation-footnote .creator-name{ 
     color: white;
     margin-left: .25rem;
     
 }
-#card-creation-footnote #creator-name:hover, #ETH-title:hover  {
+.card-creation-footnote .creator-name:hover, .ETH-title:hover  {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
 
-#card-creation-footnote {
+.card-creation-footnote {
     display: flex;
     align-items: center;
 }
 
-#card-creation-footnote::before {
+.card-creation-footnote::before {
     background-image: url(images/image-avatar.png);
     background-size: 40px 40px;
     display: inline-block;
